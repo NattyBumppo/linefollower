@@ -275,6 +275,8 @@ float PIDController(float err)
 //    Serial.println(p + i + d);
 //    Serial.println("=========");    
     
+    lastError = err;
+
     return (p + i + d);
 }
 
